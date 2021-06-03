@@ -1,22 +1,46 @@
 <!DOCTYPE html>
 <html>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+
 <style>
 
     a{
         font-family:arial, sans-serif;
         text-decoration: none;
         font-size: 13px;
+        color: #000;
     }
-
+    a:hover {
+            text-decoration: underline;
+        }
     #top-left a{
         padding-left: 15px;
         color: #000;
         opacity: 0.75;
     }
-
-    a:hover {
-        text-decoration: underline;
+    #top-right {
+        padding-right: 5px;
+        color: #000;
+        float: right;
+        
     }
+    #top-right a{
+        padding-right: 15px;
+        opacity: 0.75;
+    }
+    #signin {
+        color: #fff;
+        border: 1px solid #4285f4;
+        font-weight: bold;
+        background: #4285f4;
+        display: inline-block;
+        line-height: 28px;
+        padding: 0 12px;
+        opacity: 1.0;
+    }
+
 
 
 </style>
@@ -25,9 +49,26 @@
         <a href="">About</a>
         <a href="">Store</a>
     </div>
+    <div id="top-right">
+        <a id="tr1" href="">Gmail</a>
+        <a id="tr2" href="">Images</a>
+        <a><button id="tr3"><span class="material-icons">apps</span></button></a>
+        <a><button id="signin" type="">Sign In</button></a>
+    </div>
+
+
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px" width="272">
 
-
+<footer id="f-left">
+    <ul>Advertising</ul>
+    <ul>Business</ul>
+    <ul>How Search works</ul>
+</footer>
+<footer id="f-right">
+    <ul>Privacy</ul>
+    <ul>Terms</ul>
+    <ul>Settings</ul>
+</footer>
 
 </main>
 
