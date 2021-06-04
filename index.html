@@ -10,7 +10,6 @@
         font-family:arial, sans-serif;
         text-decoration: none;
         font-size: 13px;
-        color: #000;
     }
     a:hover {
             text-decoration: underline;
@@ -29,6 +28,11 @@
     #top-right a{
         padding-right: 15px;
         opacity: 0.75;
+        color: #000;
+    }
+    #tr3 button {
+        outline: none;
+        border: none;
     }
     #signin {
         color: #fff;
@@ -39,6 +43,35 @@
         line-height: 28px;
         padding: 0 12px;
         opacity: 1.0;
+    }
+    footer {
+        width: 100%;
+        bottom: 0;
+        left: 0;
+        right:0;
+        position: absolute;
+        background: #f2f2f2;
+        border-top: 1px solid #e4e4e4;
+        line-height: 40px;
+        color: #5f6368;
+    }
+    #f-right{
+        float:right;
+        padding-right: 19px;
+    }
+    #f-left{
+        float:left;
+        padding-left: 19px;
+    }
+    #f-right a{
+        padding:11px;
+        color: #5f6368;
+        font-size: 14px;
+    }
+    #f-left a{
+        padding:11px;
+        color: #5f6368;
+        font-size: 14px;
     }
 
 
@@ -52,24 +85,24 @@
     <div id="top-right">
         <a id="tr1" href="">Gmail</a>
         <a id="tr2" href="">Images</a>
-        <a><button id="tr3"><span class="material-icons">apps</span></button></a>
+        <a id="iconpic"><button id="tr3"><span class="material-icons">apps</span></button></a>
         <a><button id="signin" type="">Sign In</button></a>
     </div>
 
 
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px" width="272">
-
-<footer id="f-left">
-    <ul>Advertising</ul>
-    <ul>Business</ul>
-    <ul>How Search works</ul>
+<footer>
+    <div id="f-left">
+        <a href="">Advertising</a>
+        <a href="">Business</a>
+        <a href="">How Search works</a>
+    </div>
+    <div id="f-right">
+        <a href="">Privacy</a>
+        <a href="">Terms</a>
+        <a href="">Settings</a>
+    </div>
 </footer>
-<footer id="f-right">
-    <ul>Privacy</ul>
-    <ul>Terms</ul>
-    <ul>Settings</ul>
-</footer>
-
 </main>
 
 </html>
