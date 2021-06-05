@@ -9,40 +9,126 @@
     a{
         font-family:arial, sans-serif;
         text-decoration: none;
-        font-size: 13px;
+        font-size: 14px;
     }
     a:hover {
-            text-decoration: underline;
+        text-decoration: underline;
         }
-    #top-left a{
-        padding-left: 15px;
+    #top-left{
+        padding-top: 10px;
+        padding-left: 8px;
+    }
+    #top-left a {
+        
+        padding: 7px;
         color: #000;
-        opacity: 0.75;
     }
     #top-right {
         padding-right: 5px;
         color: #000;
         float: right;
-        
+        position: absolute;
+        right: 15px;
+        top: 3px;    
     }
     #top-right a{
-        padding-right: 15px;
+        padding: 7px;
         opacity: 0.75;
         color: #000;
     }
+    #tr3 {
+        position: relative;
+        top:7px;
+    }
+    #tr3:hover{
+        text-decoration: none !important;
+        cursor: pointer;
+        background: #e1e1e1;
+        border-top: 1px solid #d0d0d0;
+        border-radius: 50%;
+    }
     #signin {
         color: #fff;
-        border: 1px solid #4285f4;
+        border: 1px solid #2b7de9;
         font-weight: bold;
-        background: #4285f4;
+        background: #2b7de9;
         display: inline-block;
         line-height: 28px;
         padding: 0 12px;
         opacity: 1.0;
     }
+    #signin:hover {
+        background: #4285f4;
+    }
     #searchbar {
         background: #fff;
         border: 1px solid #dfe1e5;
+        border-radius: 24px;
+        width:540px;
+        height: 40px;
+    }
+    #searchbar:hover {
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+        border-color: rgb(223,225,229,0);
+    }
+    #searchbar:focus {
+        outline: none;
+        box-shadow: 0 1px 6px 0 rgb(32 33 36 / 28%);
+        border-color: rgb(223,225,229,0);
+    }
+    #searchpic {
+        color: #9AA0A6;
+    }
+    input[type="text"] {
+        padding-left: 50px !important;
+        font-family:arial, sans-serif;
+        font-size: 16px;
+        color:#2e2b2b;
+    }
+    #searchbuttons button{
+        border:none;
+        color:#4a4a4a;
+        border-radius: 3px;
+        padding: 0 16px;
+        height: 36px;
+        cursor: pointer;
+    }
+    #searchbuttons button:hover{
+        color: #000;
+        border: 1px solid #ded9d9;  
+    }
+    #googlepic {
+        position: relative;
+        padding-top: 109px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        
+    }
+    #searchbar {
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    #search {
+        padding: 20px;
+    }
+    #searchpic{
+        position:absolute;
+        top: 379px;
+        left: 673px;
+    }
+    #searchbuttons{
+        position: relative;
+        margin: 0 auto;
+        display: flex;
+        justify-content: center;
+    }
+    #searchbuttons a{
+        padding: 20px;
+        color:#222;
     }
     footer {
         width: 100%;
@@ -78,6 +164,7 @@
 
 </style>
 <main>
+<div id="navbar">    
     <div id="top-left">       
         <a href="">About</a>
         <a href="">Store</a>
@@ -85,17 +172,24 @@
     <div id="top-right">
         <a id="tr1" href="">Gmail</a>
         <a id="tr2" href="">Images</a>
-        <span class="material-icons">apps</span>
+        <a id="tr3" <span class="material-icons">apps</span></a>
         <a><button id="signin" type="">Sign In</button></a>
     </div>
-
-
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px" width="272">
-<input id="searchbar" type="text" placeholder="">
-<div>
-    <button>Google Search</button>
-    <button>I'm Feeling Lucky</button>
 </div>
+
+<div id="googlepic">
+    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px" width="272">
+</div>
+
+<div id="search">
+    <input id="searchbar" type="text" placeholder="">
+</div>
+<span id="searchpic" class="material-icons">search</span>
+<div id="searchbuttons">
+    <a><button>Google Search</button></a>
+    <a><button>I'm Feeling Lucky</button></a>
+</div>
+
 
 <footer>
     <div id="f-left">
