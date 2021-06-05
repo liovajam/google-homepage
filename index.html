@@ -30,10 +30,6 @@
         opacity: 0.75;
         color: #000;
     }
-    #tr3 button {
-        outline: none;
-        border: none;
-    }
     #signin {
         color: #fff;
         border: 1px solid #4285f4;
@@ -43,6 +39,10 @@
         line-height: 28px;
         padding: 0 12px;
         opacity: 1.0;
+    }
+    #searchbar {
+        background: #fff;
+        border: 1px solid #dfe1e5;
     }
     footer {
         width: 100%;
@@ -85,12 +85,18 @@
     <div id="top-right">
         <a id="tr1" href="">Gmail</a>
         <a id="tr2" href="">Images</a>
-        <a id="iconpic"><button id="tr3"><span class="material-icons">apps</span></button></a>
+        <span class="material-icons">apps</span>
         <a><button id="signin" type="">Sign In</button></a>
     </div>
 
 
 <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" style="padding-top: 109px" width="272">
+<input id="searchbar" type="text" placeholder="">
+<div>
+    <button>Google Search</button>
+    <button>I'm Feeling Lucky</button>
+</div>
+
 <footer>
     <div id="f-left">
         <a href="">Advertising</a>
