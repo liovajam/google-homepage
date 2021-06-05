@@ -1,2 +1,1 @@
-brief intro of project
-skills mastered to complete
+This is a project in where I used css and html skills to mimic the google homepage. I learned how to apply the basics in fonts and styles and positioning and using devtools and online resources to do this project. 
